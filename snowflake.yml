@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Snowflake API
+  description: This API used to generate universal unique identification number.
+  version: 0.0.1
+
+servers:
+  - url: http://10.110.0.25:18005
+    description: Staging environment.
+  - url: http://127.0.0.1:8080
+    description: Local environment.
+
+paths:
+  /id:
+    get:
+      summary: Returns generated ID.
+      description: Base on Twitter Snowflake algorithm.
+      responses:
+        '200':    # status code
+          description: A JSON object of id
+          content:
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: Snowflake ID.
+                  machine-id:
+                    type: integer
+                    description: Machine ID.
+                  msb:
+                    type: integer
+                    description: MSB.
+                  sequence:
+                    type: integer
+                    description: Sequence.
+                  time:
+                    type: integer
+                    description: Generated at.
+                example:
+                  id: 194433427053740057
+                  machine-id: 25
+                  sequence: 0
+                  time: 11589135352
