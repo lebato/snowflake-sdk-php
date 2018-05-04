@@ -1,5 +1,5 @@
 {
-    "name": "lebato/snowflakeapi",
+    "name": "lebato/snowflake-sdk-php",
     "type": "library",
     "description": "This API used to generate universal unique identification number.",
     "keywords": ["Snowflake API","API","SDK"],
