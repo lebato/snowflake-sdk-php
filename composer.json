@@ -1,16 +1,16 @@
 {
-    "name": "apimatic/snowflakeapi",
+    "name": "lebato/snowflakeapi",
     "type": "library",
     "description": "This API used to generate universal unique identification number.",
     "keywords": ["Snowflake API","API","SDK"],
-    "homepage": "https://apimatic.io",
+    "homepage": "https://leba.to",
     "license": "MIT",
     "authors": [
         {
-            "name": "APIMatic SDK Generator",
-            "email": "support@apimatic.io",
-            "homepage": "https://apimatic.io",
-            "role": "API Tool"
+            "name": "Huy Huỳnh",
+            "email": "huy@leba.to",
+            "homepage": "https://leba.to",
+            "description": "Using API Matic for generate API"
         }
     ],
     "require": {
